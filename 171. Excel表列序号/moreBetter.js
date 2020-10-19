@@ -3,6 +3,7 @@
  * 说明还是对内置API不熟悉.
  */
 
+// 将字母数组映射到一个它的 索引数组, 然后用数值, 一个关键的值就是 AB = A * 26 ** 1 + B * 26 ** 0
 const titleToNumber = function (s) {
   let len = s.length;
   let arr = [...s].reverse().map((letter) => letter.charCodeAt() - 64);

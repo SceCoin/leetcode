@@ -3,7 +3,7 @@
  * @return {string}
  */
 
-// str会每次循环都获取到上一个str,
+// str会每次循环都获取到上一个str, 将上一个str分解成数组在循环操作一次.
 var countAndSay = function (n) {
   let str = "1";
 
