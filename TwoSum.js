@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   let dis = 0;
   for (let i = 0; i < nums.length; i++) {
     dis = target - nums[i];
@@ -17,4 +17,8 @@ var twoSum = function(nums, target) {
   }
 };
 
+console.log(twoSum([-1, -2, 3, -4, 8], 11));
+console.log(twoSum([-1, -2, 3, -4, 8], 11));
+console.log(twoSum([-1, -2, 3, -4, 8], 11));
+console.log(twoSum([-1, -2, 3, -4, 8], 11));
 console.log(twoSum([-1, -2, 3, -4, 8], 11));
