@@ -18,3 +18,5 @@ var isPowerOfFour = function (num) {
 
 console.log(isPowerOfFour(5));
 console.log(isPowerOfFour(-4));
+console.log(isPowerOfFour(8));
+console.log(isPowerOfFour(256));
