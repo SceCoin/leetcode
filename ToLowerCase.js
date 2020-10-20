@@ -23,6 +23,3 @@ var toLowerCase = function (str) {
 
 console.log(toLowerCase("heererEWRJLWERJ1234"));
 console.log(toLowerCase("heererEWRJLWERJ1234"));
-console.log(toLowerCase("heererEWRJLWERJ1234"));
-console.log(toLowerCase("heererEWRJLWERJ1234"));
-console.log(toLowerCase("heererEWRJLWERJ1234"));
