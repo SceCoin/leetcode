@@ -34,6 +34,4 @@ var convertToBase7 = function (num) {
   return str.join("");
 };
 
-console.log(convertToBase7(100));
-console.log(convertToBase7(-7));
 console.log(convertToBase7(0));
