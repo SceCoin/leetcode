@@ -2,7 +2,7 @@
  * @param {string} str
  * @return {string}
  */
-var toLowerCase = function(str) {
+var toLowerCase = function (str) {
   let newstr = "";
 
   // 1. 先拆分string变成数组
@@ -21,4 +21,8 @@ var toLowerCase = function(str) {
   return newstr;
 };
 
+console.log(toLowerCase("heererEWRJLWERJ1234"));
+console.log(toLowerCase("heererEWRJLWERJ1234"));
+console.log(toLowerCase("heererEWRJLWERJ1234"));
+console.log(toLowerCase("heererEWRJLWERJ1234"));
 console.log(toLowerCase("heererEWRJLWERJ1234"));
