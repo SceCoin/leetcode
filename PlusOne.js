@@ -2,7 +2,7 @@
  * @param {number[]} digits
  * @return {number[]}
  */
-var plusOne = function(digits) {
+var plusOne = function (digits) {
   // 1.取出末尾数计算+1
   let num = Number(digits.pop()) + 1;
   let count = 1;
@@ -39,7 +39,7 @@ console.log(
 // console.log(plusOne([9]));
 
 // 解法2
-var plusOne2 = function(digits) {
+var plusOne2 = function (digits) {
   digits = digits.reverse();
   digits[0] += 1;
   let i = 0;
@@ -65,7 +65,7 @@ console.log(
 // console.log(plusOne2([5]));
 
 // 解法3  超过20位不行
-var plusOne3 = function(digits) {
+var plusOne3 = function (digits) {
   let newDigts = 0;
   for (let num of digits) {
     newDigts = newDigts * 10 + num;
@@ -81,4 +81,11 @@ var plusOne3 = function(digits) {
 console.log(
   plusOne3([9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9])
 );
+console.log(plusOne3([5]));
+console.log(plusOne3([5]));
+console.log(plusOne3([5]));
+console.log(plusOne3([5]));
+console.log(plusOne3([5]));
+console.log(plusOne3([5]));
+console.log(plusOne3([5]));
 console.log(plusOne3([5]));
