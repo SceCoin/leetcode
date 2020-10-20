@@ -35,5 +35,3 @@ var convertToBase7 = function (num) {
 };
 
 console.log(convertToBase7(100));
-console.log(convertToBase7(-7));
-console.log(convertToBase7(0));
