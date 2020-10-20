@@ -11,7 +11,7 @@
  * @return {number[]}
  */
 
-// 二叉树的中序遍历
+// 二叉树的中序遍历, 递归简单算法, 中序的中指的是根节点再中间.
 var inorderTraversal = function (root) {
   let res = [];
 
