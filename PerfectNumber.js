@@ -2,7 +2,7 @@
  * @param {number} num
  * @return {boolean}
  */
-var checkPerfectNumber = function(num) {
+var checkPerfectNumber = function (num) {
   let arr = [];
   let sum = 0;
 
@@ -26,4 +26,8 @@ var checkPerfectNumber = function(num) {
   }
 };
 
+console.log(checkPerfectNumber(0));
+console.log(checkPerfectNumber(0));
+console.log(checkPerfectNumber(0));
+console.log(checkPerfectNumber(0));
 console.log(checkPerfectNumber(0));
