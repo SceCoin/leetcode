@@ -3,7 +3,8 @@
  * @return {void} Do not return anything, modify s in-place instead.
  */
 
-// 双指针, 数组的第一个值和最后一个值对调, 第二个和倒二对调, 直到对调完.
+// 思路: 双指针, 数组的第一个值和最后一个值对调, 第二个和倒二对调, 直到对调完.
+
 var reverseString = function (s) {
   let end = s.length - 1;
 
