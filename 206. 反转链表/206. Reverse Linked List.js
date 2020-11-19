@@ -11,16 +11,22 @@
  */
 
 // 设立一个Prev节点, 将当前节点的Next指向prev节点, 然后把当前节点变为下一个节点, 重复操作
-// 这是迭代法
+// 这是迭代法 , 可以理解为有两个指针, 一前一后, 做交换
+
+// 迭代法就三步:  1. 创建一个 prev 指针, 和 curr 指针
+//              2. 进入迭代, 保存 下一个节点,  然后让 当前节点的next指向 上一个节点
+//              3. 移动 Prev 和 curr 指针
 
 var reverseList = function (head) {
   let prev = null;
   let curr = head;
+
   while (curr != null) {
-    let next = curr.next;
-    curr.next = prev;
-    prev = curr;
-    curr = next;
+    let next = curr.next; // 先把下一个节点保存住
+    curr.next = prev; // 然后改变 当前节点的指向 到 prev
+
+    prev = curr; // prev 重新赋值为 当前节点, 可以理解为Prev指针下移了一位
+    curr = next; // curr 指针移动到下一个节点, 也是下移一位
   }
 
   return prev;

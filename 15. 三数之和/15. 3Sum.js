@@ -11,25 +11,28 @@
 var threeSum = function (nums) {
   let ans = [];
   let len = nums.length;
-  if (nums == null || len < 3) return ans;
-  nums.sort((a, b) => a - b);
+  if (nums == null || len < 3) return ans; // 如果数组不存在或者长度小于3, 说明元素不够
+  nums.sort((a, b) => a - b); // 排序
 
   for (let i = 0; i < len; i++) {
-    if (nums[i] > 0) break;
-    if (i > 0 && nums[i] == nums[i - 1]) continue;
+    if (nums[i] > 0) break; // 如果最左值大于0 , 那么sum 不可能等于0
+    if (i > 0 && nums[i] == nums[i - 1]) continue; // 去重操作
 
     let left = i + 1;
     let right = len - 1;
 
     while (left < right) {
+      // while循环里其实就三步,  sum = 0, sum > 0, sum < 0
       const sum = nums[i] + nums[left] + nums[right];
 
       if (sum == 0) {
         ans.push([nums[i], nums[left], nums[right]]);
         while (left < right && nums[left] == nums[left + 1]) {
+          // 去重操作
           left++;
         }
         while (left < right && nums[right] == nums[right - 1]) {
+          // 去重操作
           right--;
         }
 
