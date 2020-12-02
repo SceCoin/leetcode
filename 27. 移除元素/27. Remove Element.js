@@ -4,7 +4,7 @@
  * @return {number}
  */
 
-// 思路, 直接遍历然后找到元素删除, 时间复杂度O(n)
+// 思路, 直接遍历然后找到元素删除, 时间复杂度O(n), 其实就是去重操作.
 var removeElement = function (nums, val) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] == val) {
