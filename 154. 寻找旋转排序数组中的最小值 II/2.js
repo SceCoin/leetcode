@@ -3,6 +3,8 @@
  * @return {number}
  */
 var findMin = function (nums) {
+  // 找左边界
+
   let left = 0;
   let right = nums.length - 1;
 
