@@ -12,7 +12,7 @@ const merge = function (num1, m, num2, n) {
   const index2 = n - 1;
   const tail = m + n - 1;
 
-  while (index >= 0) {
+  while (index2 >= 0) {
     if (num1[index1] > num2[index2]) {
       num1[tail] = num1[index1];
       index1--;
