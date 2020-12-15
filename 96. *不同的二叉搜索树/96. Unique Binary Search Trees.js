@@ -2,6 +2,11 @@
  * @param {number} n
  * @return {number}
  */
+
+// 思路: 如果整数 1 - n 中的 k 作为根节点值，则 1 - k-1 会去构建左子树，k+1 - n 会去构建右子树。
+//      左子树出来的形态有 a 种，右子树出来的形态有 b 种，则整个树的形态有 a * b 种。
+//      以 kk 为根节点的 BST 种类数 = 左子树 BST 种类数 * 右子树 BST 种类数
+
 var numTrees = function (n) {
   let memo = new Array(n + 1);
 
