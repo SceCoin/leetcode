@@ -3,19 +3,24 @@
  * @return {boolean}
  */
 var isHappy = function (n) {
-  // 思路: 会无线循环说明一定会循环到某一个值导致 无限循环, 所以找到那个值就可以返回false
-  const list = new Set();
-  while (!list.has(n)) {
-    list.add(n);
+  // 思路: 把所有计算过的值保存到 set 中, 如果又出现了表中的数说明进入重复了
+
+  const mySet = new Set();
+
+  while (!mySet.has(n)) {
+    mySet.add(n);
     let sum = 0;
+
     while (n) {
       const value = n % 10;
-      sum += value * value;
+      sum += value ** 2;
       n = parseInt(n / 10);
     }
+
     if (sum == 1) {
       return true;
     }
+
     n = sum;
   }
 
