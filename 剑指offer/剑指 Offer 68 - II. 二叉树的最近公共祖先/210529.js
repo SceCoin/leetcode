@@ -1,0 +1,38 @@
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @return {TreeNode}
+ */
+ var lowestCommonAncestor = function(root, p, q) {
+    // 因为是普通的二叉树, 没法用二叉搜索树的方法
+    // 广度优先BFS, 后续遍历,
+
+    if (root == null) {
+      return null
+    }
+
+    if (root == q || root == p) {
+      return root
+    }
+
+    let left = lowestCommonAncestor(root.left, p, q)
+    let right = lowestCommonAncestor(root.right, p, q)
+
+    if (left && right) {
+      return root
+    }
+
+    if (left == null) {
+      return right
+    }
+
+    return left
+  };
